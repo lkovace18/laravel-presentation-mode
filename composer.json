@@ -1,0 +1,35 @@
+{
+    "name": "lkovace18/laravel-presentation-mode",
+    "description": "Laravel package for presenting sites still in develompment.",
+    "keywords": ["laravel", "stage", "presentation", "demo"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luka Kovačević",
+            "email": "luka.kovaceic.jr@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "lKovace18\\PresentationMode\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "lKovace18\\PresentationMode\\Test\\": "tests"
+        }
+    },
+
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
